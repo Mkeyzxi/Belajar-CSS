@@ -1,0 +1,26 @@
+:root {
+    --gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    --gd: linear-gradient(-90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+body {
+    min-height: 100vh;
+    background-image: var(--gradient);
+    background-size: 200%;
+    animation: gradient-animation 25s infinite alternate;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: center;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+/* background: var(--gd); */

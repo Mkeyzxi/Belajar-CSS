@@ -1,0 +1,5 @@
+("indah",52,"Jl.polanda",160),
+("iskal",42,"Jl.akulahku",150),
+("informa",32,"Jl.iaokta",167),
+("jindah",53,"Jl.jarsambul",145),
+("irlandah",42,"Jl.kalmu",175);

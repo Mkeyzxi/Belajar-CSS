@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid black;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 5% solid rgb(18, 18, 18);
+    box-shadow: 2px 2px 2px rgb(138, 135, 135);
+}
+
+.container header {
+    margin-top: 50px;
+}
+
+.container header h1,
+h2 {
+    font: 28px/16px normal bold arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.container header h2 {
+    font-size: 24px;
+}
+
+main form {
+    margin-top: 35px;
+}
+
+main form input {
+    margin: auto;
+    width: 80%;
+    height: 40px;
+    display: block;
+    margin-top: 10px !important;
+    border-radius: 5px;
+    background-color: rgba(16, 13, 13, 0.71);
+}
+
+main form input:hover {
+    background-color: rgb(121, 183, 234);
+}
+
+::placeholder {
+    color: rgb(70, 104, 215);
+    padding: 10px;
+}

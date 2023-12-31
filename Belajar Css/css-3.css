@@ -1,0 +1,45 @@
+.container {
+    width: 250px;
+    height: 340px;
+    background-color: rgb(30, 29, 29);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.tetote {
+    width: 295px;
+    height: 360px;
+    background-color: rgb(73, 197, 219);
+    box-sizing: border-box;
+    animation: rotate 20s linear infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.login {
+    width: 245px;
+    height: 335px;
+    background-color: rgb(30, 29, 29);
+    position: absolute;
+    margin-top: -358px;
+    margin-left: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+h1 {
+    font: 26px/16px bold normal arial, sans-serif;
+    text-align: center;
+    color: rgb(137, 255, 255);
+    margin-top: 40px;
+}

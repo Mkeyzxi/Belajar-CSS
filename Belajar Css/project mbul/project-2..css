@@ -1,0 +1,182 @@
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    @font-face {
+        font-family: 'Rubik-Light';
+        src: url('Rubik-Light.ttf') format('truetype');
+    }
+    /* lanjut ngoding */
+    
+    body {
+        background-image: url(gambar/sampulheart.jpg);
+        background-position: 0px -80px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .container nav {
+        height: 80px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        background-color: #1a1a1a;
+        box-sizing: border-box;
+    }
+    
+    .container nav h1 {
+        width: 50%;
+        font: 35px/0px "Rubik-Light", arial, sans-serif;
+        color: rgb(255, 166, 0);
+        display: inline-block;
+        line-height: 17px;
+        float: left;
+        margin-left: 300px;
+    }
+    
+    .container nav h1:hover {
+        color: #ff1f57;
+    }
+    
+    .container nav ul li {
+        display: inline-block;
+        float: left;
+        margin: 5px 35px 0 0;
+        padding: 5px;
+        box-sizing: border-box;
+        color: #ffac42;
+    }
+    
+    .container nav ul li a {
+        font-family: "Rubik-Light";
+        color: #ffac42;
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px;
+        transition: .2s;
+    }
+    
+    .container nav ul li a:hover {
+        color: #ff1f57;
+        background-color: #ffac42;
+        border-bottom: 5px solid #ff1f57;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    /* main */
+    
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes putar {
+        0% {
+            transform: scale(30px, 30px);
+        }
+        100% {
+            transform: scale(30px, 30px);
+        }
+    }
+    
+    main .profile {
+        width: 280px;
+        height: 380px;
+        background-color: #1a1a1a;
+        position: relative;
+        top: 210px;
+        left: 257px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    
+    main .profile {
+        filter: drop-shadow(2px 3px 2px #ff1f57);
+    }
+    
+    main .profile:hover {
+        filter: drop-shadow(-2px -3px 2px #ff1f57);
+        transition: 1s;
+    }
+    
+    main .profile .efek {
+        padding: 8px;
+        width: 280px;
+        height: 380px;
+        background-color: #ffac42;
+        animation: rotate 6s linear infinite alternate;
+    }
+    
+    main .profile .efek:hover {
+        transform: scale(30px, 30px);
+        animation: putar 1s linear infinite alternate;
+    }
+    
+    main .profile .nampung {
+        width: 275px;
+        height: 375px;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 3px;
+        left: 2px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    main .profile .nampung h2 {
+        font: 35px/0px "Rubik-Light", arial, sans-serif;
+        text-align: center;
+        color: #ff1f57;
+    }
+    
+    main .profile .nampung img {
+        height: 280px;
+        display: inline-block;
+        margin: 10px 25px;
+        border-top: 2px solid #ff1f57;
+        box-sizing: border-box;
+        border-bottom: 2px solid #ff1f57;
+    }

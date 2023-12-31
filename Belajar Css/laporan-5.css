@@ -1,0 +1,512 @@
+                                    * {
+                                        scroll-behavior: smooth;
+                                    }
+                                    
+                                    html,
+                                    body {
+                                        margin: 0;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                        font-family: "Rubik-Light";
+                                        background: rgb(252, 186, 3);
+                                        background: linear-gradient(90deg, rgba(252, 186, 3, 1) 0%, rgba(252, 102, 3, 1) 100%);
+                                        background-size: 300%;
+                                        animation: background 5s ease infinite alternate;
+                                    }
+                                    
+                                    h1,
+                                    h2,
+                                    h2 {
+                                        font-family: "Poppins-Light";
+                                    }
+                                    
+                                     :root {
+                                        --background: #ffffff;
+                                        --background2: #ffe4b5;
+                                        --hias: #fabd14;
+                                        --border: #2b2521;
+                                        --font: #f27f27;
+                                        --font2: #242424;
+                                        --font3: #ff1f57;
+                                        --font4: #210057;
+                                    }
+                                    
+                                    @font-face {
+                                        font-family: "Poppins-Light";
+                                        src: url("font/poppins/Poppins-Regular.otf") format('truetype');
+                                    }
+                                    
+                                    @font-face {
+                                        font-family: "Rubik-Light";
+                                        src: url("font/Rubik-Light.ttf") format("truetype");
+                                    }
+                                    
+                                    nav {
+                                        width: 100%;
+                                        height: 60px;
+                                        display: fixed;
+                                        position: fixed;
+                                        z-index: 9999;
+                                    }
+                                    
+                                    nav ul {
+                                        margin: auto;
+                                        padding: 10px;
+                                        width: 200px;
+                                        display: flex;
+                                        flex-direction: wrap;
+                                        align-items: center;
+                                    }
+                                    
+                                    nav ul li {
+                                        display: inline-block;
+                                        margin: auto;
+                                        padding: 10px;
+                                    }
+                                    
+                                    nav ul li a {
+                                        text-decoration: none;
+                                        display: inline-block;
+                                        font-size: bold;
+                                        color: var(--font4);
+                                        padding: 5px;
+                                    }
+                                    
+                                    nav ul li:hover a {
+                                        border-bottom: 3px solid var(--font2);
+                                        color: var(--background);
+                                    }
+                                    
+                                    main {
+                                        margin: auto;
+                                        width: 100%;
+                                        margin-bottom: 400px;
+                                    }
+                                    
+                                    main section#Home {
+                                        display: flex;
+                                        flex-direction: wrap;
+                                        justify-content: space-evenly;
+                                        align-items: center;
+                                        height: 95vh;
+                                    }
+                                    
+                                    main section#Home,
+                                    #About,
+                                    #Animation {
+                                        width: 80%;
+                                        margin: auto;
+                                    }
+                                    
+                                    main section .home {
+                                        width: 30%;
+                                    }
+                                    
+                                    main section .home h1 {
+                                        font: 2.6em/1.2em "Poppins-Light", arial, sans-serif;
+                                    }
+                                    
+                                    main section .home p {
+                                        width: 90%;
+                                        font: 25px/30px arial, sans-serif;
+                                    }
+                                    
+                                    main section#Home img {
+                                        border-radius: 20px;
+                                        box-shadow: 0 0 15px 2px var(--font3);
+                                    }
+                                    
+                                    main section#Home img:hover {
+                                        box-shadow: 0 0 50px 1px var(--font2);
+                                        transition: .2s ease-in;
+                                    }
+                                    
+                                    main section#About .about {
+                                        width: 100%;
+                                    }
+                                    
+                                    main section#About .about {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: wrap;
+                                        justify-content: space-evenly;
+                                        align-items: space-around;
+                                        filter: drop-shadow(5px 5px 5px var(--font2));
+                                    }
+                                    
+                                    main section#About .about h2 {
+                                        width: 200px;
+                                        height: 150px;
+                                        background-color: var(--hias);
+                                        line-height: 150px;
+                                        text-align: center;
+                                        font-size: 2em;
+                                        padding: 10px;
+                                        border-radius: 10px 5px 5px 10px;
+                                    }
+                                    
+                                    main section#About .about p {
+                                        background-color: var(--border);
+                                        overflow: hidden;
+                                        padding: 10px;
+                                        /* display: none; */
+                                        font-family: "Poppins-Light";
+                                        font-size: 1em;
+                                        width: 70%;
+                                        border-radius: 10px 10px 10px 10px;
+                                        color: var(--font3);
+                                    }
+                                    
+                                    main section#About .about .perkenalan,
+                                    .tujuan {
+                                        width: 45%;
+                                        display: flex;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                        flex-direction: wrap;
+                                        padding: 5px;
+                                    }
+                                    
+                                    main section#Animation .animation {
+                                        font: 2em/1em "Poppins-Light", arial, sans-serif;
+                                        padding: 20px;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+                                    }
+                                    
+                                    main section#Animation .animation p {
+                                        letter-spacing: 30px;
+                                        font-weight: bold;
+                                        text-shadow: 1px 1px 2px black;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(1) {
+                                        animation: huruf 6.1s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(2) {
+                                        animation: huruf 6.2s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(3) {
+                                        animation: huruf 6.3s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(4) {
+                                        animation: huruf 6.4s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(5) {
+                                        animation: huruf 6.5s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(6) {
+                                        animation: huruf 6.6s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(7) {
+                                        animation: huruf 6.6s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(8) {
+                                        animation: huruf 6.6s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(9) {
+                                        animation: huruf 6.5s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(10) {
+                                        text-indent: .5em;
+                                        animation: huruf 6.4s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(11) {
+                                        animation: huruf 6.3s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(12) {
+                                        animation: huruf 6.2s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .animation p:nth-child(13) {
+                                        animation: huruf 6.1s .1s ease-in-out infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .container-foto {
+                                        width: 300px;
+                                        height: 360px;
+                                        margin: 60px auto;
+                                        background-color: #871d7d;
+                                        position: relative;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    main section#Animation .profile {
+                                        width: 280px;
+                                        height: 380px;
+                                        background-color: #1a1a1a;
+                                        position: relative;
+                                        overflow: hidden;
+                                        top: 50px;
+                                        border-radius: 5px;
+                                        margin: auto;
+                                        z-index: 9;
+                                    }
+                                    
+                                    main section#Animation .profile {
+                                        filter: drop-shadow(2px 3px 2px #ff1f57);
+                                    }
+                                    
+                                    main section#Animation .profile:hover {
+                                        filter: drop-shadow(-2px -3px 2px #ff1f57);
+                                        transition: 1s;
+                                    }
+                                    
+                                    main section#Animation .profile .efek {
+                                        padding: 8px;
+                                        width: 280px;
+                                        height: 380px;
+                                        background-color: #ffac42;
+                                        animation: rotate 6s linear infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .profile:hover .efek {
+                                        transform: scale(30px, 30px);
+                                        animation: putar 1s linear infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .profile .nampung {
+                                        width: 275px;
+                                        height: 375px;
+                                        background-color: #1a1a1a;
+                                        position: absolute;
+                                        top: 3px;
+                                        left: 2px;
+                                        box-sizing: border-box;
+                                        border-radius: 10px;
+                                    }
+                                    
+                                    main section#Animation .profile .nampung h2 {
+                                        font: 35px/0px "Rubik-Light", arial, sans-serif;
+                                        text-align: center;
+                                        color: #ff1f57;
+                                    }
+                                    
+                                    main section#Animation .profile .nampung img {
+                                        height: 280px;
+                                        display: inline-block;
+                                        margin: 10px 25px;
+                                        border-top: 2px solid #ff1f57;
+                                        box-sizing: border-box;
+                                        border-bottom: 2px solid #ff1f57;
+                                    }
+                                    
+                                    main section#Animation .bintang {
+                                        display: absolute;
+                                        width: 50px;
+                                        margin: 100px auto;
+                                        animation: keliling 6s ease-in infinite alternate;
+                                    }
+                                    
+                                    main section#Animation .bintang img {
+                                        animation: rotate 6s ease-in infinite alternate;
+                                    }
+                                    
+                                    main section#Animation figure {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        top: -50px;
+                                        position: relative;
+                                    }
+                                    
+                                    main section#Animation figure audio {
+                                        filter: drop-shadow(5px 5px 2px);
+                                        width: 50%;
+                                    }
+                                    
+                                    main section#Animation .animasi {
+                                        border-radius: 20px;
+                                        width: 50%;
+                                        background-image: url(Free\ Palestine.PNG);
+                                        background-position: -130px -130px;
+                                        display: flex;
+                                        justify-content: center;
+                                        padding: 5px;
+                                        margin: auto;
+                                        position: relative;
+                                        top: 50px;
+                                        box-shadow: 5px 5px 10px rgba(244, 238, 238, 0.913);
+                                    }
+                                    
+                                    main section#Animation .animasi .foto {
+                                        width: 300px;
+                                        height: 300px;
+                                        border-radius: 20px;
+                                        background-color: red;
+                                        border: solid 1px black;
+                                        font-size: 2.3em;
+                                        line-height: 300px;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        font-family: "Rubik-Light", Arial, Helvetica, sans-serif;
+                                    }
+                                    
+                                    main section#Animation .animasi:hover {
+                                        box-shadow: -5px -5px 10px rgba(244, 238, 238, 0.913);
+                                    }
+                                    
+                                    main section#Animation .animasi:hover .foto {
+                                        box-shadow: 0 0 20px rgba(255, 115, 115, 0.9);
+                                    }
+                                    
+                                    main section#Animation .animasi:hover .foto:nth-child(1) {
+                                        display: inline-block;
+                                        transition: all .7s ease-out;
+                                        translate: -200px 0;
+                                        rotate: 340deg;
+                                        scale: .8;
+                                        background-image: url(palestine.png);
+                                        background-position: cover;
+                                        font-size: 0;
+                                    }
+                                    
+                                    main section#Animation .animasi:hover .foto:nth-child(2) {
+                                        display: inline-block;
+                                        transition: all .7s ease-out;
+                                        translate: 200px 0;
+                                        rotate: 390deg;
+                                        scale: .8;
+                                        background-image: url(indonesia.png);
+                                        background-position: cover;
+                                        background-size: 500px;
+                                        font-size: 0;
+                                    }
+                                    
+                                    footer {
+                                        height: 50px;
+                                        background-color: var(--font2);
+                                    }
+                                    
+                                    footer .medsos {
+                                        width: 200px;
+                                        height: 50px;
+                                        margin: auto;
+                                    }
+                                    
+                                    footer .medsos ul {
+                                        display: flex;
+                                        justify-content: space-around;
+                                        align-items: center;
+                                    }
+                                    
+                                    footer .medsos ul li {
+                                        list-style: none;
+                                        margin: 11px;
+                                    }
+                                    
+                                    footer .medsos ul li a {
+                                        color: var(--font3);
+                                        font-size: 1.6em;
+                                    }
+                                    
+                                    footer .medsos ul li a:hover {
+                                        color: var(--font);
+                                    }
+                                    
+                                    @keyframes rotate {
+                                        0% {
+                                            transform: rotate(0deg);
+                                        }
+                                        100% {
+                                            transform: rotate(360deg);
+                                        }
+                                    }
+                                    
+                                    @keyframes putar {
+                                        0% {
+                                            transform: scale(30px, 30px);
+                                        }
+                                        100% {
+                                            transform: scale(30px, 30px);
+                                        }
+                                    }
+                                    
+                                    @keyframes keliling {
+                                        0% {
+                                            transform: translate(0, 0);
+                                        }
+                                        20% {
+                                            transform: translate(-300px, 0);
+                                        }
+                                        40% {
+                                            transform: translate(-300px, -500px);
+                                        }
+                                        60% {
+                                            transform: translate(300px, -500px);
+                                        }
+                                        70% {
+                                            transform: translate(300px, 0px);
+                                        }
+                                        80% {
+                                            transform: translate(0, 0);
+                                        }
+                                        100% {}
+                                    }
+                                    
+                                    @keyframes huruf {
+                                        0% {
+                                            transform: scale(0);
+                                        }
+                                        15% {
+                                            transform: translate(0, 1px);
+                                            transform: scale(1);
+                                        }
+                                        100% {
+                                            transform: scale(1);
+                                        }
+                                    }
+                                    
+                                    @keyframes background {
+                                        0% {
+                                            background-position: left;
+                                        }
+                                        100% {
+                                            background-position: right;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 768px) {
+                                        main section#Home {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            flex-wrap: wrap;
+                                            width: 100%;
+                                            margin-left: 0;
+                                        }
+                                        main section#Home p {
+                                            display: none;
+                                        }
+                                        main section#About .about {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            flex-wrap: wrap;
+                                            margin-top: 100px;
+                                            flex-direction: column;
+                                        }
+                                        main section#About .about .perkenalan,
+                                        .tujuan {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            flex-wrap: wrap;
+                                            width: 100%;
+                                        }
+                                        main section#About p {
+                                            width: 90% !important;
+                                        }
+                                    }

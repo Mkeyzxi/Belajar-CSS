@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .85);
+    margin: 25vh auto;
+    padding-top: 10px;
+}
+
+.kotak {
+    width: 180px;
+    height: 180px;
+    border: 5px solid rgb(79, 255, 155);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.kotak-2 {
+    width: 30px;
+    height: 140px;
+    margin: 2px;
+    background-color: aquamarine;
+    display: flex;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.container .isi-lima {
+    animation: tetoto 1s ease infinite alternate;
+}
+
+.container .isi-empat {
+    animation: tetoto 1s ease infinite alternate;
+    animation-delay: .2s;
+}
+
+.container .isi-tiga {
+    animation: tetoto 1s ease infinite alternate;
+    animation-delay: .3s;
+}
+
+.container .isi-dua {
+    animation: tetoto 1s ease infinite alternate;
+    animation-delay: .4s;
+}
+
+.container .isi-satu {
+    animation: tetoto 1s ease infinite alternate;
+    animation-delay: .5s;
+}
+
+@keyframes tetoto {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 140px;
+    }
+}

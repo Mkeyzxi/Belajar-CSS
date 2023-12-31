@@ -1,0 +1,21 @@
+.isi-laptop {
+    width: 450px;
+    display: flex;
+    background-color: orange;
+}
+
+.isi-laptop p {
+    width: 140px;
+    background-color: blue;
+    display: block;
+}
+
+.isi-laptop img {
+    display: inline-block;
+}
+
+.kontainer {
+    width: 500px;
+    margin: auto;
+    margin-top: 200px;
+}

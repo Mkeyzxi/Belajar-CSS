@@ -1,0 +1,170 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.30;
+    font-family: arial, serif;
+    margin-bottom: 1000px;
+    background-color: azure;
+}
+
+
+/* Latihan 1 */
+
+.container-satu {
+    width: 800px;
+    display: flex;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.container-satu .utama {
+    order: 2;
+    flex: 2;
+}
+
+.container-satu .satu {
+    order: 1;
+    flex: 1;
+}
+
+.container-satu .dua {
+    order: 3;
+    flex: 1;
+}
+
+
+/* Latihan 2 */
+
+.container-dua {
+    margin: 50px auto;
+    width: 800px;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.layanan.satu {
+    background-color: rgb(157, 255, 194);
+}
+
+.layanan.dua {
+    background-color: rgb(81, 116, 255);
+}
+
+.layanan.tiga {
+    background-color: rgb(255, 69, 85);
+}
+
+
+/* akhir latihan 2 */
+
+
+/* Latihan 3 */
+
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumnaill {
+    width: 50%;
+    justify-content: center;
+}
+
+.thumnaill img {
+    width: 100%;
+}
+
+
+/* latihan 4 */
+
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    background-color: #ccc;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card .header {
+    height: 100px;
+    background-color: gray;
+}
+
+.card .content {
+    text-align: center;
+}
+
+.buat-aja {
+    max-width: 50%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+.buat-aja .gambar {
+    width: 240px;
+    height: 200px;
+    background-color: burlywood;
+    margin: 12px;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* responsive */
+
+@media (min-width:600px) {
+    .container-satu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-satu.utama {
+        flex: 2;
+    }
+    .container-satu.satu {
+        flex: 1;
+    }
+    .container-satu.dua {
+        flex: 1;
+    }
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-dua .layanan {
+        width: 30%;
+    }
+    .thumnaill {
+        width: 35%;
+    }
+    .card {
+        width: 30%;
+    }
+    .buat-aja .gambar {
+        width: 30%;
+    }
+}

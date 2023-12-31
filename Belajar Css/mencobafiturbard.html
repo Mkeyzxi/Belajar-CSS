@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mengubah Tampilan Div</title>
+</head>
+
+<body>
+    <div id="div1">
+        <h1>Konten div1</h1>
+    </div>
+    <div id="div2">
+        <h1>Konten div2</h1>
+    </div>
+    <button onclick="changeDiv()">Ubah Tampilan</button>
+    <script>
+        function changeDiv() {
+            // Dapatkan elemen div1
+            const div1 = document.getElementById("div1");
+
+            // Dapatkan elemen div2
+            const div2 = document.getElementById("div2");
+
+            // Sembunyikan div1
+            div1.style.display = "none";
+
+            // Tampilkan div2
+            div2.style.display = "block";
+
+            div2.style.display = "none";
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Navigasi Div</title>
+</head>
+
+<body>
+    <div id="div1" class="active">
+        <h1>Div 1</h1>
+    </div>
+    <div id="div2">
+        <h1>Div 2</h1>
+    </div>
+    <div id="div3">
+        <h1>Div 3</h1>
+    </div>
+    <button id="btn1" onclick="changeDiv('div1')">Div 1</button>
+    <button id="btn2" onclick="changeDiv('div2')">Div 2</button>
+    <button id="btn3" onclick="changeDiv('div3')">Div 3</button>
+    <script>
+        function changeDiv(id) {
+            // Dapatkan elemen div yang aktif
+            const activeDiv = document.querySelector(".active");
+
+            // Sembunyikan elemen div yang aktif
+            activeDiv.style.display = "none";
+
+            // Tampilkan elemen div yang ditentukan
+            document.getElementById(id).style.display = "block";
+
+            // Set kelas active pada elemen div yang ditentukan
+            document.getElementById(id).classList.add("active");
+
+            // Hapus kelas active pada elemen div yang aktif sebelumnya
+            activeDiv.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>

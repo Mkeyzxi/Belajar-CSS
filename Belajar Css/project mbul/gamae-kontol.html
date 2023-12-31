@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flappy Bird Game</title>
+    <style>
+        #game-container {
+            width: 400px;
+            height: 500px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        #bird {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flappy Bird</h1>
+    <p>Click to jump!</p>
+    <div id="game-container">
+        <div id="bird"></div>
+    </div>
+
+    <script>
+        const bird = document.getElementById('bird');
+        const gameContainer = document.getElementById('game-container');
+
+        let birdTop = 220;
+        let gravity = 2;
+
+        function jump() {
+            if (birdTop > 0) birdTop -= 40;
+            bird.style.top = birdTop + 'px';
+        }
+
+        document.addEventListener('keydown', function (event) {
+            if (event.code === 'Space') jump();
+        });
+
+        gameContainer.addEventListener('click', jump);
+
+        function gameLoop() {
+            birdTop += gravity;
+            bird.style.top = birdTop + 'px';
+
+            if (birdTop > 450) {
+                alert('Game Over');
+                birdTop = 220;
+            }
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        gameLoop();
+    </script>
+</body>
+</html>
